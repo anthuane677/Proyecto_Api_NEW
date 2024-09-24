@@ -1,0 +1,418 @@
+/* Reseteo de márgenes y paddings */
+* {
+  padding: 0px;
+  margin: 0px;
+  
+
+}
+
+body{
+  background-color: #0f0028;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Estilos del menú */
+nav{
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0px;
+  padding-right: 1%;
+}
+
+.cinema{
+  width: 100px;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.menu li a {
+  background-color: #0f0028;
+  color: rgb(221, 183, 255);
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+  display: block;
+  padding: 10px 15px;
+}
+
+.menu li a:hover {
+  background-color: rgb(62, 62, 255);
+  color: #5bf1ff;
+  box-shadow: 0 0 3px rgb(0, 0, 255);
+}
+
+.menu > li {
+  float: left;
+}
+
+.menu li ul{
+  display:none;
+  position: absolute;
+  min-width: 140px;
+}
+
+.menu li:hover > ul {
+  display: block;
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px; /* Para centrar verticalmente, el contenedor ocupará toda la altura de la ventana */
+  text-align: center;
+  background: url(fondo1.png);
+  color: rgb(255, 255, 255);
+  font-family: "Nerko One", cursive;
+}
+
+.hero h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px #8f00b3;
+  -webkit-text-stroke : 1px #dc8ff6;
+}
+
+.hero p {
+  font-size: 30px;
+  margin-bottom: 20px;
+  -webkit-text-stroke: 0.2px gray;
+}
+
+.hero a {
+  text-decoration: none;
+  padding: 10px;
+  border: 2px solid #ed5edf;
+  border-radius: 10px;
+  background-color: rgb(233, 111, 255);
+  color: white;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.hero a:hover {
+  background-color: #ff0cf7;
+ 
+  box-shadow: 0 0 10px rgb(220, 60, 245), 0 0 15px rgb(219, 20, 86);
+  transition-delay: 0.1s;
+}
+
+/*Aqui comienza edit para el boton y buscador*/
+input{
+  font-size: 20px;
+  padding-right: 100px;
+  padding-left: 10px;
+  border-radius: 20px;
+  border: none;
+  overflow: hidden;
+  transition: 1s;
+}
+
+input:hover{
+  background-color: rgb(233, 229, 255);
+  box-shadow: 0 0 5px rgb(250, 215, 255);
+  color: #69047b;
+  transition: 0.5s;
+}
+
+button {
+  font-family: "Nerko One", cursive;
+  font-size: 18px;
+  border: none;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgb(102, 0, 212);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  margin-bottom: 25px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: #50c5ff;
+  box-shadow: 0 0 10px rgb(43, 0, 255);
+}
+
+.hero_nuevo{
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-left: 25px;
+  height: auto; /* Para centrar verticalmente, el contenedor ocupará toda la altura de la ventana */
+}
+
+/* Estilos generales para el main y footer */
+main{
+  text-align: center;
+}
+
+footer{
+  
+  text-align: center;
+  padding-bottom: 50px;
+  color: white;
+  margin-top: 40px;
+  
+}
+
+/* Estilos para contenido después de la introducción */
+.content{
+  width: 100%;
+  padding: 50px;
+  font-size: 10px;
+}
+
+/* Sección Nosotras */
+.nosotras{
+  text-align: center;
+}
+
+.nosotras img{
+  display: inline-flex;
+  width: 250px;
+}
+
+/* Styles for the movie grid */
+
+#titulo-categoria {
+  font-family: "Nerko One", cursive;
+  color: #6200ff;
+  text-shadow: 0 0 2px rgb(0, 17, 255);
+  text-align: center;
+  margin-top: 20px;
+  font-size: 45px;
+}
+
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.movie {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.movie img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.movie-title {
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #210745;
+  text-align: center;
+}
+
+.movie:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgb(187, 0, 255);
+}
+
+/* Contact Section Styles */
+.contact-section {
+  background-color: rgb(237, 193, 255);
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
+  border-radius: 10px;
+  
+}
+
+.contact-section h2 {
+  color: #9d0764;
+  margin-bottom: 20px;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.contact-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 100px;
+}
+
+.contact-list li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.contact-list li a:hover {
+  color: #7ab3ef;
+}
+
+.contact-icon {
+  font-size: 3rem;
+  color: #2f0045;
+}
+
+.contact-icon:hover {
+  color: #7a00b3;
+}
+
+/* Main section */
+.description-section {
+  padding: 40px;
+  text-align: center;
+  background-color: rgb(244, 183, 255);
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.description-section h2 {
+  color:#bc0058 ;
+  margin-bottom: 20px;
+}
+
+.description-section p {
+  color: rgb(107, 0, 0);
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* Aplicado solo al contenido dentro del div#moviesInfos */
+#moviesInfos {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 50px auto;
+  width: 80%;
+  background-color: #2a2a40;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+#moviesInfos img {
+  max-width: 40%;
+  border-radius: 10px;
+  margin-right: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+#moviesInfos .movie-details {
+  flex: 1;
+  color: #cfcfe8;
+}
+
+#moviesInfos h2 {
+  font-size: 2em;
+  color: #ffffff;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #576ce8;
+  padding-bottom: 5px;
+}
+
+#moviesInfos p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+#moviesInfos p span {
+  font-weight: bold;
+  color: #576ce8;
+}
+
+#moviesInfos a {
+  color: #576ce8;
+  text-decoration: none;
+  font-size: 1.1em;
+  margin-top: 20px;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+#moviesInfos a:hover {
+  color: #a5b3ff;
+}
+
+/* Estilos para el contenedor de filtros */
+#filtros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0px;
+  padding: 10px;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+
+/* Estilos para las etiquetas */
+#filtros label {
+  color: #9b51e0; /*Color morado para el texto*/
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+}
+
+/* Estilos para el select */
+#ordenar {
+  background-color: #333;
+  color: white;
+  border: 2px solid #9b51e0;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: 'Comic Sans MS', sans-serif;
+  font-size: 1rem;
+}
+
+/* Estilos para el input */
+#filtroAnio {
+  background-color: #333;
+  color: white;
+  border: 2px solid #9b51e0;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: 'Comic Sans MS', sans-serif;
+  font-size: 1rem;
+  width: 150px;
+  text-align: center;
+}
+
+/* Estilos para el botón */
+#aplicarFiltros {
+  background-color: #9b51e0;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: 'Comic Sans MS', sans-serif;
+  font-size: 1.1rem;
+  
+}
+
+#aplicarFiltros:hover {
+  background-color: #731bc0; /* Un color más oscuro al pasar el ratón */
+}

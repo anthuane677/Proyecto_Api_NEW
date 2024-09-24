@@ -1,0 +1,41 @@
+/* Sección de introducción */
+.intro{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+    background: rgb(19, 1, 46);
+    transition: 1s;
+  }
+  
+  .logo{
+    font-size: 100px;
+    color: white;
+    text-shadow: 0 0 10px violet;
+    border-color: blueviolet;
+  }
+  
+  .logo-parts{
+    display: inline-block;
+    bottom: 10px;
+    opacity: 0;
+  }
+  
+  .logo-parts.active{
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.2s;
+  }
+  
+  .logo-parts.fade{
+    bottom: 250px;
+    opacity: 1;
+    transition: ease-in-out 0.2s;
+  }
+  
